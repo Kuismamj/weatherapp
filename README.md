@@ -1,4 +1,4 @@
-Simple weather app where user can get any citys 5-day weather forecast including temperature, wind speed and humidity. User can also use its current location. This project is mobile-friendly.
+A weather app built with Vue.js, where users can get a 5-day weather forecast for any city, including temperature, wind speed, and humidity. Users can also fetch the forecast using their current location. The project is mobile-friendly and provides a clean, responsive design.
 
 HOW TO RUN:
 Download the app as zip.
