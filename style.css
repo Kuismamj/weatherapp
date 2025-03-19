@@ -131,7 +131,7 @@ width: calc(100%/5);
 }
 
 
-@media (max-width: 1400px){
+@media (max-width: 1400px){ /* makes it responsive*/
   .weather-data .current-weather{
     padding: 20px;
   }
