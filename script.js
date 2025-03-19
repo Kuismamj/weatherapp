@@ -44,8 +44,8 @@ const getWeatherDetails = (cityName,lat,lon) => {
         currentWeatherDiv.innerHTML = "";
         weatherCardsDiv.innerHTML = "";
 
-        fiveDaysForecast.forEach((weatherItem,index) => {
-            const html = createWeatherCard(cityName, weatherItem, index);
+        fiveDaysForecast.forEach((weatherItem,index) => { // gives each day of the five a weatherItem and an index
+            const html = createWeatherCard(cityName, weatherItem, index); // creates HTML for city, weatherData and an index
             if(index === 0){
                 currentWeatherDiv.insertAdjacentHTML("beforeend",html);
             }else{
@@ -74,7 +74,7 @@ const getCityCoordinates = () => {
         alert("An error occured while fetching the coordinates!")
     })
 }
-const getUserCoordinates = () => {
+const getUserCoordinates = () => { // gets users currents locations weather information
     navigator.geolocation.getCurrentPosition(
         position => {
             const { latitude, longitude} = position.coords;
@@ -87,7 +87,7 @@ const getUserCoordinates = () => {
             });
         },
         error => {
-            if(error.code=== error.PERMISSION_DENIED){
+            if(error.code=== error.PERMISSION_DENIED){ // if user doesnt give access to current location
                 alert("Geolocation request denied. Please reset location permission to grant access again.");
             }else{
                 alert("Geolocation request error. Please reset location permission.");
