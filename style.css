@@ -64,7 +64,7 @@ font-size: 1.5rem;
 .weather-input .location-btn:hover {
   background:rgb(33, 33, 33);
 }
-.weather-input .separator{
+.weather-input .separator{/*-----or----- separator */
   height: 1px;
   width: 100%;
   margin: 25px 0;
@@ -73,7 +73,7 @@ font-size: 1.5rem;
   align-items: center;
   justify-content: center;
 }
-.weather-input .separator::before{
+.weather-input .separator::before{/*-----or----- separator */
   content: "or";
   color: gray;
   font-size: 1.18rem;
