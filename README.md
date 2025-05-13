@@ -1,3 +1,5 @@
+https://weatherforecast-app1.netlify.app/
+
 A weather app built with Vue.js, where users can get a 5-day weather forecast for any city, including temperature, wind speed, and humidity. Users can also fetch the forecast using their current location. The project is mobile-friendly and provides a clean, responsive design.
 
 HOW TO RUN:
